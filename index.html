@@ -40,7 +40,8 @@ p {
     font-size : 0.3in;
     width: 500;
     line-height: 1;
-    background-color: #03A9F4;
+    background-color: #4169e1
+;
     padding: 20px;
     position: relative;
     margin: 20px 0 0;
@@ -79,18 +80,21 @@ table{
   border-collapse:separate;
   border-spacing: 5px;
   width: 100%;
+  color: blue;
 }
 
 table th,table td {
   border-radius: 5px;
   text-align: center;
   padding: 10px 0;
+  color: blue;
 }
 
 table th{
   background-color: #0000cd;
-  color: white;
+  color: yellow;
   border:solid 1px #927141;
+  font-size: 0.2in;
 }
 
 table td {
@@ -101,6 +105,15 @@ table td {
   font-size: 0.2in;
 }
 table td a{
+    font-size: 0.2in; 
+    text-decoration: none;    display: block;
+    width: 100%;
+    height: 100%;
+    color: blue;
+} 
+.sche{
+    text-align:left;
+    font-size: 0.2in; 
     text-decoration: none;
     display: block;
     width: 100%;
@@ -109,425 +122,144 @@ table td a{
 img {
     text-align: right;
 }
-</style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-
-<style id="webmakerstyle">
-p{
-    background-color: black;
-    color: white;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-@media screen and (max-width: 768px) {
-    p{
-        background-color: black;
-         color:green;
-     }
- }
- 
- @media screen and (max-width: 480px) {
-    p{
-        background-color: black;
-         color:red;
-     }
- }
-h1 {
-    font-family: "Hannari", serif;
-    display: block;
-    width: 1000;
-    margin:  0 auto;
-    font-weight: normal;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size : 0.5in;
-    color : whitesmoke;
-    letter-spacing: 5px;
-    background-color : #0c0680;
-}
-p {
-    font-family: "Hannari", serif;
-    font-size : 0.3in;
-    width: 500;
-    line-height: 1;
-    background-color: #03A9F4;
-    padding: 20px;
-    position: relative;
-    margin: 20px 0 0;
-    color: #fff;
-    letter-spacing: 1px;
-    text-align: center;
-}
-ul li{
-    font-family: "Hannari", serif;
-    display: block;
-    font-size : 0.2in;
-    background-color: #fff;
-    padding: 0px 10px 1px;
-    max-width: 500px;
-    margin: 0.1px auto;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 1px;
-    position: relative;
-    list-style: none;
-}
-a:not(.noadjust) {
-    color: #fff;
-    text-decoration: none;
-    background-color: #F44336;
-    display: block;
-    padding: 10px 15px;
-    border-radius: 400px;
-    box-shadow: 0 4px 0 0 #9e2b23;
-    font-weight: bold;
-    width: 500px;
-    text-align: center;
-    margin: 20px auto 0;
-    letter-spacing: 2px;
-}
-table{
-  border-collapse:separate;
-  border-spacing: 5px;
-  width: 100%;
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 80.5%;
 }
 
-table th,table td {
-  border-radius: 5px;
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   text-align: center;
-  padding: 10px 0;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.5em;
+  color: #212529;
+  border-radius: 0.8rem;
 }
 
-table th{
-  background-color: #0000cd;
-  color: white;
-  border:solid 1px #927141;
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 0.6rem 5rem;
+
+  color: #fff;
+  border-radius: 1;
+  background: #000;
+  width:80%
 }
 
-table td {
-  background-color: #e0ffff;
-  border:solid 1px #af9d85;
-  color: black;
-  font-weight: bold;
-  font-size: 0.2in;
+a.btn-flat span {
+  position: relative;
 }
-table td a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-} 
-img {
-    text-align: right;
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 150%;
+  height: 500%;
+
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+  background: #00b7ee;
 }
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
 </style>
 </head>
 <body>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" />
-
-<style id="webmakerstyle">
-p{
-    background-color: black;
-    color: white;
-}
-
-@media screen and (max-width: 768px) {
-    p{
-        background-color: black;
-         color:green;
-     }
- }
- 
- @media screen and (max-width: 480px) {
-    p{
-        background-color: black;
-         color:red;
-     }
- }
-h1 {
-    font-family: "Hannari", serif;
-    display: block;
-    width: 1000;
-    margin:  0 auto;
-    font-weight: normal;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size : 0.5in;
-    color : whitesmoke;
-    letter-spacing: 5px;
-    background-color : #0c0680;
-}
-p {
-    font-family: "Hannari", serif;
-    font-size : 0.3in;
-    width: 500;
-    line-height: 1;
-    background-color: #03A9F4;
-    padding: 20px;
-    position: relative;
-    margin: 20px 0 0;
-    color: #fff;
-    letter-spacing: 1px;
-    text-align: center;
-}
-ul li{
-    font-family: "Hannari", serif;
-    display: block;
-    font-size : 0.2in;
-    background-color: #fff;
-    padding: 0px 10px 1px;
-    max-width: 500px;
-    margin: 0.1px auto;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 1px;
-    position: relative;
-    list-style: none;
-}
-a:not(.noadjust) {
-    color: #fff;
-    text-decoration: none;
-    background-color: #F44336;
-    display: block;
-    padding: 10px 15px;
-    border-radius: 400px;
-    box-shadow: 0 4px 0 0 #9e2b23;
-    font-weight: bold;
-    width: 500px;
-    text-align: center;
-    margin: 20px auto 0;
-    letter-spacing: 2px;
-}
-table{
-  border-collapse:separate;
-  border-spacing: 5px;
-  width: 100%;
-}
-
-table th,table td {
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px 0;
-}
-
-table th{
-  background-color: #0000cd;
-  color: white;
-  border:solid 1px #927141;
-}
-
-table td {
-  background-color: #e0ffff;
-  border:solid 1px #af9d85;
-  color: black;
-  font-weight: bold;
-  font-size: 0.2in;
-}
-table td a{
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-} 
-img {
-    text-align: right;
-}
-</style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="icon" href="ico/toyo.ico">
+   
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>2024K2倫理リンク集（第4回）</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<title>2024Kスクナビリンク集</title>
+	<link rel="icon" href="G/マイドライブ/www.schnavi2023.jp/favicon/toyo.ico">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>2024K2倫理リンク集（第4回）</h1>
-<p>閲覧用リンク</p>
-<ul>
+<h1>2024年度 高校スクナビ <br>学校説明会 参加アンケート</h1>
 
-    <li><a href="https://docs.google.com/spreadsheets/d/17uk6n4A2bjU_E6XCyPRKnxEiaG4yD8mnsLcYjJi0DRY/edit?usp=sharing" target="_blank">課題提出状況</a></li>
-  　<li><a href="https://tinyurl.com/29wmdrjq" target="_blank">スケジュール</a></li>
-
-    <li><a href="" target="_blank">模範解答（考査後）</a></li>
   
-</ul>
-<p>共通課題用リンク</p>
-<ul>
-    <li><a href="https://forms.gle/YYByXiTio33R5RdW9" target="_blank">授業評価フォーム</a></li>
-    <li><a href="" target="_blank">授業のまとめ</a></li>
-</ul>
-<p>確認テスト</p>
-<ul>
-    <li><a href="" target="_blank">国際連合</a></li>
-    <li><a href="" target="_blank">国際政治の動向</a></li>
-    <li><a href="" target="_blank">核兵器・軍縮問題</a></li>
-    <li><a href="" target="_blank">人種・民族問題</a></li>
-    <li><a href="" target="_blank">国際政治の中の日本</a></li>
-</ul>
 
-<p>各クラスのハンドアウト</p>
 <table>
    <tbody>
+         <tr>
+            <th width=20%>高校説明会日程</th>
+            <td width=40%>スクナビ活動内容</td>
+            <td width=40%>参加アンケート</td>
+         </tr>
+
         <tr>
-            <th width=12.5%>ハンドアウト</th>
-            <td width=12.5% colspan="2">国際連合</td>
-            <td width=12.5% colspan="2">国際政治<br>の動向</td>
-            <td width=12.5% colspan="2">核兵器<br>軍縮</td>
-            <td width=12.5%>人種<br>民族</td>
-            <td width=12.5%>国際社会</td>
+            <th width=20%>第1回学校説明会<br>〔6月15日（土）〕</th>
+            <td width=40%>終了しました</td>
+            <td width=40%>終了しました</td>
 
         </tr>
-         <tr>
-            <th>K2-3</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/28r5b3e8" target="_blank"</a>3</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/277gxqum" target="_blank"</a>4</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/239mj56c" target="_blank"</a>1</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2yhywad2" target="_blank"</a>5</td>
-            <td><a class="noadjust" href="" target="_blank"</a>2</td>
-        </tr>
-         <tr>
-            <th>K2-4</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/235wqvmt" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2ykxa2jw" target="_blank"</a>4</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/23b6bhbp" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/29jqadpe" target="_blank"</a>2</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2d4joecu" target="_blank"</a>5</td>
+        <tr>
+            <th width=20%>第2回学校説明会<br>〔7月13日（土）〕</th>
+            <td width=40%>終了しました</td>
+            <td width=40%>終了しました</td>
         </tr>
         <tr>
-            <th>K2-5</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2dypk8rm" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/25mrnrby" target="_blank"</a>4</td>
-            <td><a class="noadjust" href="https://tinyurl.com/28v9k682" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/22mjwp6a" target="_blank"</a>6</td>
-            <td><a class="noadjust" href="https://tinyurl.com/258ouwtk" target="_blank"</a>5</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2aw2x6fj" target="_blank"</a>2</td>
-        </tr>
-         <tr>
-            <th>K2-6</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/27znamkg" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2czw5467" target="_blank"</a>3</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/25n2sbrk" target="_blank"</a>2</td>
-            <td><a class="noadjust" href="https://tinyurl.com/26k8ewco" target="_blank"</a>4</td>
-            <td><a class="noadjust" href="https://tinyurl.com/26k8ewco" target="_blank"</a>5</td>
+            <th width=20%>第3回学校説明会<br>〔7月27日（土）〕</th>
+<td width=40%>終了しました</td>
+            <td width=40%>終了しました</td>
+        <tr>
+            <th width=20%>第4回学校説明会<br>〔9月14日（土）〕</th>
+                        <td width=40%>終了しました</td>
+            <td width=40%>終了しました</td>
         </tr>
         <tr>
-            <th>K2-7</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2bz3vlfh" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2atw83jf" target="_blank"</a>2</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/239ow7ho" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/23zl2q59" target="_blank"</a>5</td>
-            <td><a class="noadjust" href="https://tinyurl.com/23msbbnz" target="_blank"</a>4</td>
-        </tr>
+            <th width=20%>第5回学校説明会<br>〔10月26日（土）〕</th>
+            <td width=40%>終了しました</td>
+            <td width=40%>終了しました</td>
         <tr>
-            <th>K2-8</th>
-            <td><a class="noadjust" href="https://tinyurl.com/22pyb6uy" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2a2yswpa" target="_blank"</a>7</td>
-            <td><a class="noadjust" href="https://tinyurl.com/25kn5o25" target="_blank"</a>1</td>
-            <td><a class="noadjust" href="https://tinyurl.com/26ztl6q2" target="_blank"</a>5</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/23scvzf9" target="_blank"</a>4</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2almqwzj" target="_blank"</a>2</td>
-            <td><a class="noadjust" href="https://tinyurl.com/28xvjp7q" target="_blank"</a>6</td>
+            <th width=20%>第6回学校説明会<br>〔11月30日（土）〕</th>
+            <td width=40%>終了しました</td>
+            <td width=40%>終了しました</td>
         </tr>
-             <tr>
-            <th>松澤<br>セレクション</th>
-            <td colspan="8"><iframe src="https://drive.google.com/file/d/117zbkogDsctNXHsb8vnzOQH0shMwjvse/preview" width="360 " height="240" allow="autoplay"></iframe>
-              
-            </td>
-               
-               
-               
-      
+     
+          <tr>
+            <th width=20%>個別相談会<br>〔12月7日（土）〕</th>
+            <td width=40%>近日公開</td>
+            <td width=40%>近日公開</td>
+        </tr>  
+
     </tbody>
 </table>  
-<p>各クラスのスライド</p>
-<table>
-   <tbody>
-        <tr>
-            <th width=12.5%>スライド</th>
-            <td width=12.5% colspan="2">国際連合</td>
-            <td width=12.5% colspan="2">国際政治<br>の動向</td>
-            <td width=12.5% colspan="2">核兵器<br>軍縮</td>
-            <td width=12.5%>人種<br>民族</td>
-            <td width=12.5%>国際社会</td>
-
-        </tr>
-         <tr>
-            <th>K2-3</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/22ddm5zb" target="_blank"</a>3</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/275gznno" target="_blank"</a>4</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/278mswvk" target="_blank"</a>1</td>
-            <td><a class="noadjust" href="" target="_blank"</a>5</td>
-            <td><a class="noadjust" href="" target="_blank"</a>2</td>
-        </tr>
-         <tr>
-            <th>K2-4</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/24vj8gnf" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2ykxa2jw" target="_blank"</a>4</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/259sv3go" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2xqxulof" target="_blank"</a>2</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2d4joecu" target="_blank"</a>5</td>
-        </tr>
-        <tr>
-            <th>K2-5</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/26jgna37" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/24w4lo7o" target="_blank"</a>4</td>
-            <td><a class="noadjust" href="https://tinyurl.com/252opefv" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2y3v5jpx" target="_blank"</a>6</td>
-            <td><a class="noadjust" href="https://tinyurl.com/26ehmou3" target="_blank"</a>5</td>
-            <td><a class="noadjust" href="https://tinyurl.com/24qzuu62" target="_blank"</a>2</td>
-        </tr>
-         <tr>
-            <th>K2-6</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/25bqtfcz" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2cngdpah" target="_blank"</a>3</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/24efz63o" target="_blank"</a>2</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2azxdd8m" target="_blank"</a>4</td>
-            <td><a class="noadjust" href="https://tinyurl.com/24wozn2d" target="_blank"</a>5</td>
-        </tr>
-        <tr>
-            <th>K2-7</th>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2ba4bjk9" target="_blank"</a>1</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/2yvjgbbr" target="_blank"</a>2</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/23gnvt95" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2cr4mljb" target="_blank"</a>5</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2abcjf5c" target="_blank"</a>4</td>
-        </tr>
-        <tr>
-            <th>K2-8</th>
-            <td><a class="noadjust" href="https://tinyurl.com/28ed9oa6" target="_blank"</a>3</td>
-            <td><a class="noadjust" href="https://tinyurl.com/28a72r5p" target="_blank"</a>7</td>
-            <td><a class="noadjust" href="https://tinyurl.com/28fdtgob" target="_blank"</a>1</td>
-            <td><a class="noadjust" href="" target="_blank"</a>5</td>
-            <td colspan="2"><a class="noadjust" href="https://tinyurl.com/24me5atw" target="_blank"</a>4</td>
-            <td><a class="noadjust" href="https://tinyurl.com/2bt6ryy9" target="_blank"</a>2</td>
-            <td><a class="noadjust" href="https://tinyurl.com/22m3vlhk" target="_blank"</a>6</td>
-        </tr>
-    </tbody>
-</table>  
-
-
-<a class="noadjust" href="https://www.free-counter.jp/"><img src="https://www.f-counter.net/j/61/1675243338/" alt="アクセスカウンター"></a>  
-  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
-</body>
-
-</html>
-
-<script src="filesystem:https://webmaker.app/temporary/script.js">
-</script>
-</body>
-</html>
-
-<script src="filesystem:https://webmaker.app/temporary/script.js">
-</script>
 </body>
 </html>
 
